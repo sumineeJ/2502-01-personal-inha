@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인하대학교</title>
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/sub.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Swiper 슬라이드 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <div class="pageTitle">
+    <h1>총장실</h1>
+    <div class="category">
+      <div class="inner">
+        <ul class="sub_category">
+          <li class="home"><i class="xi-home"></i></li>
+          <li>인하소개<span><i class="xi-angle-down"></i></span>
+            <ol>
+              <li><a href="1-1-2.html">인하소개</a></li>
+              <li><a href="2-2-1.html">입학안내</a></li>
+              <li>대학/대학원</li>
+              <li><a href="4-2-1.html">산학/연구</a></li>
+              <li><a href="5-1-1.html">대학생활</a></li>
+              <li><a href="6-1-1.html">인하소식</a></li>
+            </ol>
+          </li>
+          <li>총장실<span><i class="xi-angle-down"></i></span>
+            <ol>
+              <li><a href="1-1-2.html">이념/역사</a></li>
+              <li><a href="1-2-1.html">총장실</a></li>
+              <li><a href="1-3-1.html">학교법인</a></li>
+              <li><a href="1-4-1.html">대학현황</a></li>
+              <li><a href="1-5-1.html">상징</a></li>
+              <li><a href="1-6-1.html">캠퍼스안내</a></li>
+            </ol>
+          </li>
+          <li>인사말<span><i class="xi-angle-down"></i></span>
+            <ol>
+              <li><a href="1-2-1.html">인사말</a></li>
+              <li><a href="1-2-2.html">약력</a></li>
+              <li><a href="1-2-3.html">주요활동</a></li>
+              <li><a href="1-2-4.html">역대총장</a></li>
+            </ol>
+          </li>
+          <li class="icon">
+            <p><i class="xi-print"></i></p><p><i class="xi-star"></i></p><p><i class="xi-share-alt-o"></i></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="sub_space">
+      <div class="inner">
+        <div class="title">산학협력단 소식</div>
+        <div class="content s6-2-3">
+
+          <div class="board_gallery">
+            <div class="board_top_wrap">
+              <div class="board_search board_right">
+                <select class="search_select">
+                  <option>전체</option>
+                  <option>옵션1</option>
+                  <option>옵션2</option>
+                </select>
+                <input type="text" class="search_input" placeholder="검색어를 입력하세요">
+                <button class="search_btn">검색</button>
+              </div>
+            </div>
+
+            <div class="board_list">
+              <!-- 게시글이 여기에 들어감 -->
+            </div>
+          
+            <div class="board_page">
+              <!-- 페이지 버튼이 여기에 들어감 -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="writer">
+      <div class="inner">
+        <div class="team_info">
+          <span class="label">콘텐츠 담당</span>
+          <span class="divider"></span>
+          <span class="dept">홍보팀</span>
+          <span class="tel"><i class="xi-call"></i> 032-860-7193</span>
+        </div>
+        <div class="date">
+          <span>수정일</span>
+          <span>2025-03-14</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    $('#header').load('header.html', function() {
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+<script>
+  const boardData = [
+  {
+    category: "연구성과",
+    title: "바이오의약품 원부자재 재직자 교육·산학협력 프로젝트 수행 기업 모집",
+    writer: "인하대 홍보팀",
+    date: "2025.04.28",
+    views: 12,
+    desc: "바이오의약품 원부자재 교육과 산학협력 프로젝트 기업 모집. 첨단소재공정연구소 주관.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "‘2025 실험실 특화형 창업선도대학’ 선정",
+    writer: "인하대 홍보팀",
+    date: "2025.04.28",
+    views: 25,
+    desc: "실험실 중심 창업 지원과 창업 인프라 확충. 약 20억 정부지원 확보.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "교수",
+    title: "이영우 교수 교원창업기업, ‘대한민국 혁신기업 대상’ 수상",
+    writer: "인하대 홍보팀",
+    date: "2025.04.24",
+    views: 113,
+    desc: "㈜에이다스랩, 차량 신뢰성 기술과 자율주행 분야 혁신기업 대상 수상.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "연구성과",
+    title: "셀트리온과 바이오의약품 특화 인재 양성 위한 산학협력",
+    writer: "인하대 홍보팀",
+    date: "2025.04.23",
+    views: 270,
+    desc: "첨단바이오의약학과, 셀트리온과 전략적 산학협력 체결.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "해수부 ‘해양블루테크 미래리더 양성 프로젝트’ 주관기관 선정",
+    writer: "인하대 홍보팀",
+    date: "2025.04.22",
+    views: 87,
+    desc: "해양환경-수산-해상풍력 융합 교육 추진. BEACON 프로젝트 수행.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "일반대학원, 2025학년도 후기 신입생 모집",
+    writer: "인하대 홍보팀",
+    date: "2025.04.21",
+    views: 206,
+    desc: "다양한 장학제도 운영, 전일제 박사과정 100% 등록금 지원.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "조명우 총장, ‘인하와 인천’ 특강",
+    writer: "인하대 홍보팀",
+    date: "2025.04.18",
+    views: 333,
+    desc: "인하대 역사와 미래 청사진 제시. 지역사회와 함께 성장 비전 제시.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "연구성과",
+    title: "㈜이오시스템과 산학협력 업무협약 체결",
+    writer: "인하대 홍보팀",
+    date: "2025.04.18",
+    views: 91,
+    desc: "국방 AI 기술 개발 및 인력 양성 위해 공동 연구 협력.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "문형배 헌법재판소장 권한대행 재판관 초청 특강",
+    writer: "인하대 홍보팀",
+    date: "2025.04.18",
+    views: 1140,
+    desc: "법률가의 길 주제 강연. 학생들에게 혼, 창, 통 강조.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "국어문화원, 우리말 겨루기 참가자 모집",
+    writer: "인하대 홍보팀",
+    date: "2025.04.16",
+    views: 93,
+    desc: "세종대왕 탄신 628돌 기념, 우리말 올바른 사용 캠페인.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "연구성과",
+    title: "㈜이오시스템과 산학협력 업무협약 체결",
+    writer: "인하대 홍보팀",
+    date: "2025.04.18",
+    views: 91,
+    desc: "국방 AI 기술 개발 및 인력 양성 위해 공동 연구 협력.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "문형배 헌법재판소장 권한대행 재판관 초청 특강",
+    writer: "인하대 홍보팀",
+    date: "2025.04.18",
+    views: 1140,
+    desc: "법률가의 길 주제 강연. 학생들에게 혼, 창, 통 강조.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "국어문화원, 우리말 겨루기 참가자 모집",
+    writer: "인하대 홍보팀",
+    date: "2025.04.16",
+    views: 93,
+    desc: "세종대왕 탄신 628돌 기념, 우리말 올바른 사용 캠페인.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "연구성과",
+    title: "㈜이오시스템과 산학협력 업무협약 체결",
+    writer: "인하대 홍보팀",
+    date: "2025.04.18",
+    views: 91,
+    desc: "국방 AI 기술 개발 및 인력 양성 위해 공동 연구 협력.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "문형배 헌법재판소장 권한대행 재판관 초청 특강",
+    writer: "인하대 홍보팀",
+    date: "2025.04.18",
+    views: 1140,
+    desc: "법률가의 길 주제 강연. 학생들에게 혼, 창, 통 강조.",
+    img: "6-2-1_250428_01.png"
+  },
+  {
+    category: "학교",
+    title: "국어문화원, 우리말 겨루기 참가자 모집",
+    writer: "인하대 홍보팀",
+    date: "2025.04.16",
+    views: 93,
+    desc: "세종대왕 탄신 628돌 기념, 우리말 올바른 사용 캠페인.",
+    img: "6-2-1_250428_01.png"
+  }
+];
+
+
+</script>
+
+<script src="../js/board_gallery.js"></script>
+
+
+
+</body>
+</html>

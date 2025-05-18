@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인하대학교</title>
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/sub.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Swiper 슬라이드 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <div class="pageTitle">
+    <h1>총장실</h1>
+    <div class="category">
+      <div class="inner">
+        <ul class="sub_category">
+          <li class="home"><i class="xi-home"></i></li>
+          <li>인하소개<span><i class="xi-angle-down"></i></span>
+            <ol>
+              <li><a href="1-1-2.html">인하소개</a></li>
+              <li><a href="2-2-1.html">입학안내</a></li>
+              <li>대학/대학원</li>
+              <li><a href="4-2-1.html">산학/연구</a></li>
+              <li><a href="5-1-1.html">대학생활</a></li>
+              <li><a href="6-1-1.html">인하소식</a></li>
+            </ol>
+          </li>
+          <li>총장실<span><i class="xi-angle-down"></i></span>
+            <ol>
+              <li><a href="1-1-2.html">이념/역사</a></li>
+              <li><a href="1-2-1.html">총장실</a></li>
+              <li><a href="1-3-1.html">학교법인</a></li>
+              <li><a href="1-4-1.html">대학현황</a></li>
+              <li><a href="1-5-1.html">상징</a></li>
+              <li><a href="1-6-1.html">캠퍼스안내</a></li>
+            </ol>
+          </li>
+          <li>인사말<span><i class="xi-angle-down"></i></span>
+            <ol>
+              <li><a href="1-2-1.html">인사말</a></li>
+              <li><a href="1-2-2.html">약력</a></li>
+              <li><a href="1-2-3.html">주요활동</a></li>
+              <li><a href="1-2-4.html">역대총장</a></li>
+            </ol>
+          </li>
+          <li class="icon">
+            <p><i class="xi-print"></i></p><p><i class="xi-star"></i></p><p><i class="xi-share-alt-o"></i></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="sub_space">
+      <div class="inner">
+        <div class="title">공지사항</div>
+        <div class="content s6-2-1">
+
+          <div class="board_basic">
+            <div class="board_top_wrap">
+              <div class="board_tabs">
+                <button class="tab active" data-category="all">전체</button><button class="tab" data-category="교수">교수</button><button class="tab" data-category="동문">동문</button><button class="tab" data-category="학생">학생</button><button class="tab" data-category="학교">학교</button><button class="tab" data-category="연구성과">연구성과</button>
+              </div>
+              <div class="board_search board_right">
+                <select class="search_select">
+                  <option>전체</option>
+                  <option>공지사항</option>
+                  <option>보도자료</option>
+                </select>
+                <input type="text" class="search_input" placeholder="검색어를 입력하세요">
+                <button class="search_btn">검색</button>
+              </div>
+            </div>
+          
+            <div class="board_list">
+              <!-- 게시글 리스트 들어감 -->
+            </div>
+          
+            <div class="board_page">
+              <!-- 페이지네이션 버튼 들어감 -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="writer">
+      <div class="inner">
+        <div class="team_info">
+          <span class="label">콘텐츠 담당</span>
+          <span class="divider"></span>
+          <span class="dept">홍보팀</span>
+          <span class="tel"><i class="xi-call"></i> 032-860-7193</span>
+        </div>
+        <div class="date">
+          <span>수정일</span>
+          <span>2025-03-14</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    $('#header').load('header.html', function() {
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+  <script>
+    const boardBasicData = [
+    {category: "학교",title:"바이오의약품 원부자재 재직자 교육·산학협력 프로젝트",writer:"인하대 홍보팀",date:"2025.04.28",views:12},
+    {category: "학교",title:"‘2025 실험실 특화형 창업선도대학’ 선정",writer:"인하대 홍보팀",date:"2025.04.28",views:25},
+    {category: "학교",title:"이영우 교수 교원창업기업, ‘혁신기업 대상’ 수상",writer:"인하대 홍보팀",date:"2025.04.24",views:113},
+    {fix:true, category: "학교",title:"셀트리온과 바이오의약품 특화 인재 양성 협력",writer:"인하대 홍보팀",date:"2025.04.23",views:270},
+    // 추가 데이터 입력
+  ];
+  </script>
+
+  <script src="../js/board_basic.js"></script>
+
+
+
+</body>
+</html>

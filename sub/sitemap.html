@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인하대학교</title>
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/sub.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Swiper 슬라이드 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <div class="pageTitle">
+    <h1>사이트맵</h1>
+    <div class="category">
+      <div class="inner">
+        <ul class="sub_category">
+          <li class="home"><i class="xi-home"></i></li>
+          <li>사이트맵<span><i class="xi-angle-down"></i></span>
+            <ol>
+              <li><a href="sitemap.html">사이트맵</a></li>
+            </ol>
+          </li>
+          <li class="icon">
+            <p><i class="xi-print"></i></p><p><i class="xi-star"></i></p><p><i class="xi-share-alt-o"></i></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="sub_space">
+      <div class="inner">
+        <div class="title">사이트맵</div>
+        <div class="content sitemap">
+          <div class="sitemap_title">
+            <h1>사이트맵</h1>
+            <p>원하는 메뉴를 빠르게 찾아보세요</p>
+          </div>
+        
+          <div class="sitemap_section">
+            <h2>인하소개</h2>
+            <ul>
+              <li><a href="">개교 70주년 기념</a></li>
+              <li><a href="1-1-2.html">건학 이념</a></li>
+              <li><a href="1-1-3.html">연혁</a></li>
+              <li><a href="1-2-1.html">총장 인사말</a></li>
+              <li><a href="1-2-2.html">총장 약력</a></li>
+              <li><a href="1-3-1.html">임원현황</a></li>
+              <li><a href="1-4-1.html">대학현황</a></li>
+              <li><a href="1-5-1.html">상징</a></li>
+              <li><a href="1-6-1.html">찾아오시는 길</a></li>
+            </ul>
+          </div>
+        
+          <div class="sitemap_section">
+            <h2>입학안내</h2>
+            <ul>
+              <li><a href="">입학처</a></li>
+              <li><a href="">국제처</a></li>
+              <li><a href="2-2-1.html">대학원 입학안내</a></li>
+              <li><a href="2-3-1.html">기타교육과정</a></li>
+            </ul>
+          </div>
+        
+          <div class="sitemap_section">
+            <h2>대학/대학원</h2>
+            <ul>
+              <li><a href="">공과대학</a></li>
+              <li><a href="">자연과학대학</a></li>
+              <li><a href="">경영대학</a></li>
+              <li><a href="">문과대학</a></li>
+              <li><a href="">일반대학원</a></li>
+              <li><a href="">공학대학원</a></li>
+            </ul>
+          </div>
+        
+          <div class="sitemap_section">
+            <h2>산학/연구</h2>
+            <ul>
+              <li><a href="">산학협력단</a></li>
+              <li><a href="4-2-1.html">BK21 교육연구단</a></li>
+              <li><a href="4-3-1.html">연구지원</a></li>
+              <li><a href="4-4-2.html">교원 창업자</a></li>
+            </ul>
+          </div>
+        
+          <div class="sitemap_section">
+            <h2>대학생활</h2>
+            <ul>
+              <li><a href="5-1-1.html">학사일정</a></li>
+              <li><a href="5-1-3.html">장학</a></li>
+              <li><a href="5-2-2.html">편의서비스</a></li>
+              <li><a href="5-3-1.html">학생자치기구</a></li>
+              <li><a href="5-4-2.html">기숙생활관</a></li>
+              <li><a href="5-5-2.html">총동창회</a></li>
+            </ul>
+          </div>
+        
+          <div class="sitemap_section">
+            <h2>인하소식</h2>
+            <ul>
+              <li><a href="6-1-1.html">공지사항</a></li>
+              <li><a href="6-1-2.html">입찰공고</a></li>
+              <li><a href="6-2-1.html">인하뉴스</a></li>
+              <li><a href="6-2-4.html">특허소식</a></li>
+              <li><a href="6-3-2.html">대학웹진</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="writer">
+      <div class="inner">
+        <div class="team_info">
+          <span class="label">콘텐츠 담당</span>
+          <span class="divider"></span>
+          <span class="dept">교육기획팀</span>
+          <span class="tel"><i class="xi-call"></i> 032-860-9315</span>
+        </div>
+        <div class="date">
+          <span>수정일</span>
+          <span>2025-03-14</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    $('#header').load('header.html', function() {
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인하대학교</title>
+  <link rel="stylesheet" href="css/common.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/cookie.js"></script>
+  <!-- Swiper 슬라이드 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/calendar.js"></script>
+</head>
+<body>
+
+<!-- pc popup -->
+<div class="pop">
+  <div class="inner">
+    <!-- Slider main container -->
+    <div class="swiper_pop">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/pop_2.jpg" alt="인하대학교"></div>
+        <div class="swiper-slide"><img src="img/pop_2.jpg" alt="인하대학교"></div>
+        <div class="swiper-slide"><img src="img/pop_3.jpg" alt="인하대학교"></div>
+        <div class="swiper-slide"><img src="img/pop_4.jpg" alt="인하대학교"></div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <p><input type="checkbox" id="popup_ck"> 오늘 하루 안 보기</p>
+    </div>
+    <div class="swiper-button-prev pop-prev"></div>
+    <div class="swiper-button-next pop-next"></div>    
+  </div>
+</div>
+
+<!-- search modal -->
+<div class="search_modal">
+  <div class="search_box">
+    <p class="close"><i class="xi-close"></i></p>
+    <div class="search">
+      <p><span>INHA</span> SEARCH</p>
+      <div>
+        <input type="text" placeholder="검색어를 입력해주세요"> <i class="xi-search"></i>
+      </div>
+      <ul>
+        <li>자주 찾는 키워드</li>
+        <li>수강신청</li>
+        <li>장학금</li>
+        <li>입학상담</li>
+        <li>휴학</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="wrap index_page">
+
+  <header>
+    <nav class="inner">
+      <div class="header1">
+        <ul class="link">
+          <li><a href="#" class="link_disabled">I-Class</a></li>
+          <li><a href="#" class="link_disabled">인하포털</a></li>
+          <li><a href="#" class="link_disabled">인하광장</a></li>
+          <li><a href="#" class="link_disabled">오픈런</a></li>
+        </ul>
+        <div class="popup_btn"><i class="xi-bell-o"></i>POPUP</div>
+      </div> <!-- /.header1 -->
+      <div class="header2">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo_w.png" alt="인하대학교"></a>
+        </div>
+        <ul class="gnb">
+          <li><a href="#">인하소개</a>
+            <p class="line"></p>
+          </li>
+          <li><a href="#">입학안내</a>
+            <p class="line"></p>
+          </li>
+          <li><a href="#">대학/대학원</a>
+            <p class="line"></p>
+          </li>
+          <li><a href="#">산학/연구</a>
+            <p class="line"></p>
+          </li>
+          <li><a href="#">대학생활</a>
+            <p class="line"></p>
+          </li>
+          <li><a href="#">인하소식</a>
+            <p class="line"></p>
+          </li>
+        </ul>
+        <div class="icon">
+          <i class="xi-search"></i>
+          <i class="xi-globus"></i>
+          <a href="sub/sitemap.html"><i class="xi-bars pc"></i></a>
+          <i class="xi-bars mobile"></i>
+        </div>
+      </div> <!-- /.header2 -->
+    </nav>
+
+    <!-- hover sub menu -->
+    <div class="sub sub_01">
+      <ul class="inner">
+        <li class="sub_title">
+          <h1>인하소개</h1>
+          <p>
+            인하와 성장하는 인재<br>
+            미래 사회 핵심인재
+          </p>
+        </li>
+        <li class="sub_depth">
+          <h4>이념/역사</h4>
+          <div>
+            <p><a href="" class="link_disabled">개교 70주년 기념<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="sub/1-1-2.html">건학 이념</a></p>
+            <p><a href="sub/1-1-3.html">연혁</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>총장실</h4>
+          <div>
+            <p><a href="sub/1-2-1.html">인사말</a></p>
+            <p><a href="sub/1-2-2.html">약력</a></p>
+            <p><a href="sub/1-2-3.html">주요활동</a></p>
+            <p><a href="sub/1-2-4.html">역대총장</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>학교법인</h4>
+          <div>
+            <p><a href="sub/1-3-1.html">임원현황</a></p>
+            <p><a href="sub/1-3-2.html">이사회</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>대학현황</h4>
+          <div>
+            <p><a href="sub/1-4-1.html">현황</a></p>
+            <p><a href="sub/1-4-2.html" class="soon">대학기구</a></p>
+            <p><a href="sub/1-4-3.html">규정집</a></p>
+            <p><a href="sub/1-4-4.html" class="soon">예결산공고</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>상징</h4>
+          <div>
+            <p><a href="sub/1-5-1.html" class="soon">로고</a></p>
+            <p><a href="sub/1-5-2.html">상징물</a></p>
+            <p><a href="sub/1-5-3.html">노래</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>캠퍼스 안내</h4>
+          <div>
+            <p><a href="sub/1-6-1.html">찾아오시는 길</a></p>
+            <p><a href="sub/1-6-2.html" class="soon">셔틀/통학버스</a></p>
+            <p><a href="sub/1-6-3.html" class="soon">편의서비스</a></p>
+            <p><a href="" class="link_disabled">캠퍼스맵<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="sub/1-6-5.html">캠퍼스 투어</a></p>
+            <p><a href="sub/1-6-6.html">교내전화번호부</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub sub_02">
+      <ul class="inner">
+        <li class="sub_title">
+          <h1>입학안내</h1>
+          <p>
+            인하와 성장하는 인재<br>
+            미래 사회 핵심인재
+          </p>
+        </li>
+        <li class="sub_depth">
+          <h4>대학</h4>
+          <div>
+            <p><a href="" class="link_disabled">입학처<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">국제처(외국인 입학)<span><i class="xi-external-link"></i></span></a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>대학원</h4>
+          <div>
+            <p><a href="sub/2-2-1.html" class="soon">대학원 입학안내</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>기타교육과정</h4>
+          <div>
+            <p><a href="sub/2-3-1.html" class="soon">기타교육과정 안내</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub sub_03">
+      <ul class="inner">
+        <li class="sub_title">
+          <h1>대학/대학원</h1>
+          <p>
+            인하와 성장하는 인재<br>
+            미래 사회 핵심인재
+          </p>
+        </li>
+        <li class="sub_depth">
+          <h4>대학</h4>
+          <div>
+            <p><a href="" class="link_disabled">프런티어창의대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">공과대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">자연과학대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">경영대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">사범대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">사회과학대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">문과대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">의과대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">간호대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">미래융합대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">예술체육대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">국제학부<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">소프트웨어융합대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">바이오시스템융합학부<span><i class="xi-external-link"></i></span></a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>대학원</h4>
+          <div>
+            <p><a href="" class="link_disabled">일반대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">공학대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">경영대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">교육대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">정책대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">상담심리대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">보건대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">법학전문대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">물류전문대학원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">제조혁신전문대학원<span><i class="xi-external-link"></i></span></a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>기타교육과정</h4>
+          <div>
+            <p><a href="" class="link_disabled">국제교류학생<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">해외 대학<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">평생교육원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">언어교육원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">과학영재교육센터<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">문화예술교육원<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="" class="link_disabled">INHA SUMMER SCHOOL<span><i class="xi-external-link"></i></span></a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub sub_04">
+      <ul class="inner">
+        <li class="sub_title">
+          <h1>산학/연구</h1>
+          <p>
+            인하와 성장하는 인재<br>
+            미래 사회 핵심인재
+          </p>
+        </li>
+        <li class="sub_depth">
+          <h4>산학협력단</h4>
+          <div>
+            <p><a href="" class="link_disabled">산학협력단<span><i class="xi-external-link"></i></span></a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>연구기관</h4>
+          <div>
+            <p><a href="sub/4-2-1.html">BK21 교육연구단(팀)</a></p>
+            <p><a href="sub/4-2-2.html">국가지정연구기관</a></p>
+            <p><a href="sub/4-2-3.html">대학부설연구기관</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>연구지원</h4>
+          <div>
+            <p><a href="sub/4-3-1.html">연구지원</a></p>
+            <p><a href="" class="link_disabled">연구자 정보(PURE)<span><i class="xi-external-link"></i></span></a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>창업지원단</h4>
+          <div>
+            <p><a href="" class="link_disabled">창업지원단<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="sub/4-4-2.html" class="soon">교원 창업자</a></p>
+            <p><a href="sub/4-4-3.html" class="soon">학생 창업자</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub sub_05">
+      <ul class="inner">
+        <li class="sub_title">
+          <h1>대학생활</h1>
+          <p>
+            인하와 성장하는 인재<br>
+            미래 사회 핵심인재
+          </p>
+        </li>
+        <li class="sub_depth">
+          <h4>학사안내</h4>
+          <div>
+            <p><a href="sub/5-1-1.html" class="soon">학사일정</a></p>
+            <p><a href="sub/5-1-2.html" class="soon">수업/성적</a></p>
+            <p><a href="sub/5-1-3.html" class="soon">장학</a></p>
+            <p><a href="sub/5-1-4.html" class="soon">학적행정</a></p>
+            <p><a href="sub/5-1-5.html" class="soon">증명서발급</a></p>
+            <p><a href="sub/5-1-6.html" class="soon">ROTC(학군사관)</a></p>
+            <p><a href="sub/5-1-7.html" class="soon">다중전공/마이크로전공/교직</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>학생지원</h4>
+          <div>
+            <p><a href="" class="link_disabled">인하광장<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="sub/5-2-2.html" class="soon">편의서비스</a></p>
+            <p><a href="sub/5-2-3.html">참(眞)인재 프로그램</a></p>
+            <p><a href="sub/5-2-4.html" class="soon">새내기 가이드</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>학생활동</h4>
+          <div>
+            <p><a href="sub/5-3-1.html" class="soon">학생자치기구</a></p>
+            <p><a href="sub/5-3-2.html" class="soon">방송국&신문사</a></p>
+            <p><a href="sub/5-3-3.html" class="soon">동아리</a></p>
+            <p><a href="sub/5-3-4.html" class="soon">축제</a></p>
+            <p><a href="sub/5-3-5.html" class="soon">멘토링</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>캠퍼스 시설</h4>
+          <div>
+            <p><a href="sub/5-4-1.html" class="soon">시설안내</a></p>
+            <p><a href="sub/5-4-2.html" class="soon">기숙생활관</a></p>
+            <p><a href="sub/5-4-3.html" class="soon">대학건강센터</a></p>
+            <p><a href="sub/5-4-4.html" class="soon">상담센터/장애학생지원실</a></p>
+            <p><a href="sub/5-4-5.html" class="soon">시설물 사용 지원</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>졸업/취업지원</h4>
+          <div>
+            <p><a href="" class="link_disabled">학생진로설계포털시스템<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="sub/5-5-2.html" class="soon">총동창회</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub sub_06">
+      <ul class="inner">
+        <li class="sub_title">
+          <h1>인하소식</h1>
+          <p>
+            인하와 성장하는 인재<br>
+            미래 사회 핵심인재
+          </p>
+        </li>
+        <li class="sub_depth">
+          <h4>인하알림</h4>
+          <div>
+            <p><a href="sub/6-1-1.html">공지사항</a></p>
+            <p><a href="sub/6-1-2.html" class="soon">입찰공고</a></p>
+            <p><a href="sub/6-1-3.html" class="soon">행사/세미나</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>인하뉴스</h4>
+          <div>
+            <p><a href="sub/6-2-1.html"s>인하뉴스</a></p>
+            <p><a href="sub/6-2-2.html">인하인 인터뷰</a></p>
+            <p><a href="sub/6-2-3.html">산학협력단 소식</a></p>
+            <p><a href="sub/6-2-4.html">특허소식</a></p>
+          </div>
+        </li>
+        <li class="sub_depth">
+          <h4>인하홍보관</h4>
+          <div>
+            <p><a href="" class="link_disabled">대학신문<span><i class="xi-external-link"></i></span></a></p>
+            <p><a href="sub/6-3-2.html" class="soon">대학웹진</a></p>
+            <p><a href="sub/6-3-3.html" class="soon">대학미디어</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- /hover sub menu -->
+    
+  </header>
+
+  <div class="main_visual">
+    <!-- Slider main container -->
+    <div class="swiper_main">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="line">
+            <p><img src="img/main/main_visual_1.jpg" alt="인하대학교"></p>
+          </div>
+          <div class="text">
+            <p>14일 학위수여식… 학부·대학원생 등 3천729명 졸업</p>
+            <p>
+              2025년도 2월 학위수여식 개최<br>
+              “자랑스런 역사에 새로운 도약의 주인공”
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="line">
+            <p><img src="img/main/main_visual_2.jpg" alt="인하대학교"></p>
+          </div>
+          <div class="text">
+            <p>송용진 수학과 명예교수 강의실 현판식 개최</p>
+            <p>
+              30여년 동안 수학과 발전 헌신<br>
+              발전기금 1억원 기부 등 학문 연구 후학 양성에 힘써
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="line">
+            <p><img src="img/main/main_visual_3.jpg" alt="인하대학교"></p>
+          </div>
+          <div class="text">
+            <p>융합전공 교육과정과 연계한 해외직무역량 강화 성과</p>
+            <p>
+              GGC 국외 단기 표준현장실습학기제 성공적 운영
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <main>
+
+    <section id="sec_01">
+      <div class="inner">
+        <h1>뉴스&인터뷰</h1>
+        <div class="swiper_news">
+          <!-- Additional required wrapper -->
+          <ul class="swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide">
+              <div><img src="img/main/news_1.jpg" alt="인하대학교"></div>
+              <h3>인하 좋은 강의 에세이 공모전·CTL공모전 시상식</h3>
+              <p>본교는 최근 2024학년도 2학기 인하 좋은 강의 에세이 공모전과 CTL 공모전 시상식을 진행했다. 교수학습개발센터가 운영하는 인하 좋은 강의 에세이 공모전은 학생들이 해당 학기 수강한 강의 중 ‘인하 좋은 강의’로 적극 추천하고 싶거나 학우들에게 공유하고 싶은 인상적인 강의를 에세이 형식으로 작성하는 방식이다.</p>
+            </li>
+            <li class="swiper-slide">
+              <div><img src="img/main/news_2.jpg" alt="인하대학교"></div>
+              <h3>㈜엠티오메가와 산학협력 업무협약 체결</h3>
+              <p>본교 인공지능융합연구센터가 ㈜엠티오메가와 산학협력 업무협약을 체결했다. 인공지능융합연구센터는 생성형 인공지능기술 개발과 인력 양성을 위해 자동차용 블랙박스 분야 선도기업인 ㈜엠티오메가와 손을 잡았다.</p>
+            </li>
+            <li class="swiper-slide">
+              <div><img src="img/main/news_3.jpg" alt="인하대학교"></div>
+              <h3>동계방학 봉사활동 공모제 통해 지역사회 공헌 나서</h3>
+              <p>본교가 겨울방학 동안 ‘인하 동계방학 봉사활동 공모제’를 통해 지역사회와 함께하는 다양한 봉사활동을 펼쳐 눈길을 끈다. 인하 동계방학 봉사활동 공모제는 학생들이 직접 봉사활동을 기획·실행하면서 지역사회 발전에 기여하고 사회적 책임감을 키우는 게 목표다.</p>
+            </li>
+            <li class="swiper-slide">
+              <div><img src="img/main/news_4.jpg" alt="인하대학교"></div>
+              <h3>2025학년도 IPP형 일학습병행 신규기업 모집 설명회 개최</h3>
+              <p>인하인재개발원 소속 IPP듀얼공동훈련센터가 ‘2025학년도 IPP형 일학습병행 신규기업 모집 설명회’를 성공적으로 마쳤다. 이번 설명회는 표준 현장실습학기제(Co-op)에 참여 중인 우량기업 중 2025학년도 일학습병행 사업에 관심을 보이는 약 20개 기업을 대상으로 진행됐다.</p>
+            </li>
+            <li class="swiper-slide">
+              <div><img src="img/main/news_5.jpg" alt="인하대학교"></div>
+              <h3>2025 IPP형 일학습병행·첨단산업 아카데미 참여 학습근로자 커뮤니티 간담회 개최</h3>
+              <p>본교는 최근 ‘2025년 IPP형 일학습병행 및 일학습병행 첨단산업 아카데미 학습근로자 커뮤니티 간담회’를 진행했다. 이번 커뮤니티 간담회에는 2025년 IPP형 일학습병행 및 첨단산업 아카데미 학습근로자 50여명이 참여했다. 학생들은 일학습병행 프로그램에 대한 전반적인 진행 과정에 대한 설명을 듣고, 서로 간의 네트워킹을 강화하는 시간을 가졌다.</p>
+            </li>
+            <li class="swiper-slide">
+              <div><img src="img/main/news_6.jpg" alt="인하대학교"></div>
+              <h3>조철희 교수, 한국신·재생에너지학회 회장 취임</h3>
+              <p>조철희 조선해양공학과 교수가 최근 한국신·재생에너지학회 제11대 회장으로 취임했다. 조철희 교수는 한국해양공학회 회장, 아시아 해양에너지학회 의장, IEEE TC114 위원 등 다양한 직책을 역임하며 해양에너지 분야에서 두각을 나타내왔다. 한국신·재생에너지학회 부회장과 국제학술대회 조직위원장을 맡으면서 학회 발전에도 기여했다.</p>
+            </li>
+            <li class="swiper-slide">
+              <div><img src="img/main/news_7.jpg" alt="인하대학교"></div>
+              <h3>반도체특성화대학 학생들, ‘반도체 솔버톤 경진대회’서 우수상</h3>
+              <p>본교 반도체특성화대학 소속 학생들이 ‘2024 유니위크’(Uni-week)에서 우수상을 받았다. 반도체특성과대학사업단 소속 장준영 전자공학과 학생과 이진영 정보통신공학과 학생은 2024 유니위크에서 열린 반도체 솔버톤 경진대회에서 수상했다.</p>
+            </li>
+            <li class="swiper-slide">
+              <div><img src="img/main/news_8.jpg" alt="인하대학교"></div>
+              <h3>인하대, 졸업생 취업률 2년 연속 전국 4위 쾌거… 취업률 71.5%</h3>
+              <p>본교가 교육부·한국교육개발원이 최근 발표한 ‘2023 고등교육기관 졸업자 취업통계조사’(2023년 12월 31일 기준)에서 졸업생 3천명 이상을 배출하는 전국 대학 중 취업률 4위를 기록했다.</p>
+            </li>
+          </ul>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sub_visual">
+      <p>
+        역사를 개척한 <span>인하,</span><br>
+        <span>혁신</span>으로 나아가다
+      </p>
+    </div>
+
+    <section id="sec_02">
+      <div class="inner">
+        <div class="left">
+          <div class="title">
+            <h1><span id="title_text">공지사항</span> <span class="icon"><i class="xi-angle-down"></i></span></h1>
+            <ol>
+              <li data-type="notice">공지사항</li>
+              <li data-type="bidding">입찰공고</li>
+            </ol>
+          </div>
+          <ol class="category">
+            <li class="select" data-category="all">전체</li>
+            <li data-category="학사">학사</li>
+            <li data-category="장학">장학</li>
+            <li data-category="특강">특강</li>
+            <li data-category="모집/채용">모집/채용</li>
+            <li data-category="기타">기타</li>
+          </ol>
+          <ul class="content" id="notice_list">
+            <li data-category="기타"><p><a href="#">2025-1학기 통합스쿨버스/셔틀버스 운행 안내</a></p><p>2025.01.31.</p><p class="line"></p></li>
+            <li data-category="장학"><p><a href="#">[학부-교외장학] 2025학년도 플라톤 장학생 신청 안내</a></p><p>2025.01.31.</p><p class="line"></p></li>
+            <li data-category="장학"><p><a href="#">2025학년도 새얼문화재단 장학생 선발 안내</a></p><p>2025.01.31.</p><p class="line"></p></li>
+            <li data-category="모집/채용"><p><a href="#">공과대학 고시반 인현재 입실자 선발 안내</a></p><p>2025.01.31.</p><p class="line"></p></li>
+            <li data-category="장학"><p><a href="#">우아한 사장님 자녀 장학금 모집 안내</a></p><p>2025.01.31.</p><p class="line"></p></li>
+            <li data-category="모집/채용"><p><a href="#">회상인공지능연구소 행정직원 채용 공고</a></p><p>2025.01.31.</p><p class="line"></p></li>
+            <li data-category="모집/채용"><p><a href="#">에너지부품소재 연구원 채용</a></p><p>2025.01.31.</p><p class="line"></p></li>
+          </ul>
+          <ul class="content" id="bidding_list" style="display:none;">
+            <li><p><a href="#">제2025-12호 실험기자재 입찰 공고</a></p><p>2025.01.30.</p><p class="line"></p></li>
+            <li><p><a href="#">캠퍼스 Wi-Fi 장비 교체 관련 입찰</a></p><p>2025.01.28.</p><p class="line"></p></li>
+            <li><p><a href="#">캠퍼스 Wi-Fi 장비 교체 관련 입찰</a></p><p>2025.01.28.</p><p class="line"></p></li>
+            <li><p><a href="#">캠퍼스 Wi-Fi 장비 교체 관련 입찰</a></p><p>2025.01.28.</p><p class="line"></p></li>
+            <li><p><a href="#">캠퍼스 Wi-Fi 장비 교체 관련 입찰</a></p><p>2025.01.28.</p><p class="line"></p></li>
+            <li><p><a href="#">캠퍼스 Wi-Fi 장비 교체 관련 입찰</a></p><p>2025.01.28.</p><p class="line"></p></li>
+            <li><p><a href="#">캠퍼스 Wi-Fi 장비 교체 관련 입찰</a></p><p>2025.01.28.</p><p class="line"></p></li>
+          </ul>
+          <div class="view_more">
+            <div>MORE VIEW</div>
+            <p></p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">
+            <h1>일정</h1>
+          </div>
+          <div class="calendar-container">
+            <div class="cal">
+              <div class="calendar-header">
+                  <select id="year"></select>
+                  <select id="month"></select>
+                  <button id="todayBtn">오늘</button>
+              </div>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+                      </tr>
+                  </thead>
+                  <tbody id="calendar-body"></tbody>
+              </table>
+            </div>
+            <div class="schedule">
+                <h3 id="schedule-title">일정</h3>
+                <p id="schedule-text">날짜를 선택하세요.</p>
+            </div>
+          </div>
+          <div class="view_more">
+            <div>MORE VIEW</div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec_03">
+      <div class="inner">
+        <h1>연구성과</h1>
+        <!-- Slider main container -->
+        <div class="swiper_research">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="research">
+                <div class="photo"><img src="img/main/research_1.jpg" alt="인하대학교"></div>
+                <div class="text">
+                  <h2>디스플레이용 발광 소재의 난제 해결</h2>
+                  <h3>유기물·전이 금속 디칼코겐화물 이종구조를 통한 빠른 인광 구현</h3>
+                  <p>
+                    박동혁 화학공학과 교수가 참여한 연구팀이 최근 디스플레이용 발광 소재의 난제를 해결할 수 있는 방법을 구현했다.
+                    박동혁 화학공학과 교수가 교신저자로, 최진호 화학공학융합학과 박사가 공동저자로 참여한 연구팀은 유기물과 전이금속디칼코게나이드(TMD)의 혼합을 통해 마이크로초 단위의 인광을 만들었다.
+                    빠른 인광 특성이라는 것은 빛이 발광한 뒤 소멸까지의 수명 시간이 짧다는 것을 의미한다. 수명 시간이 길면 잔상이 생기기 때문에 디스플레이용 재료로 적합하지 않다.
+                    현대 디스플레이 기술은 외부에서 주입되는 전자의 구성 중 25%에 해당한다.
+                    빠른 인광 특성이라는 것은 빛이 발광한 뒤 소멸까지의 수명 시간이 짧다는 것을 의미한다. 수명 시간이 길면 잔상이 생기기 때문에 디스플레이용 재료로 적합하지 않다.
+                    현대 디스플레이 기술은 외부에서 주입되는 전자의 구성 중 25%에 해당한다.
+                    빠른 인광 특성이라는 것은 빛이 발광한 뒤 소멸까지의 수명 시간이 짧다는 것을 의미한다. 수명 시간이 길면 잔상이 생기기 때문에 디스플레이용 재료로 적합하지 않다.
+                    현대 디스플레이 기술은 외부에서 주입되는 전자의 구성 중 25%에 해당한다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="research">
+                <div class="photo"><img src="img/main/research_2.png" alt="인하대학교"></div>
+                <div class="text">
+                  <h2>펩타이드·단백질 기반의 바르는 피부암 치료제 개발</h2>
+                  <h3>피부 투과 펩타이드 및 식물 추출 단백질 기반 바르는 흑색종 치료제</h3>
+                  <p>
+                    정우진 생명공학과 교수 연구팀이 피부 투과 펩타이드를 활용해 항암 단백질 Concanavalin A(ConA)를 피부에 바르는 흑색종 치료제를 개발했다.
+                    ConA는 작두콩에서 쉽게 추출할 수 있는 천연 물질이다. 기존의 항체 기반 생물학적 치료제보다 생산 비용이 월등히 낮아 상용화 가능성이 높은 항암제 후보 물질로 꼽힌다. 하지만 높은 간독성으로 임상적 활용이 제한돼왔다.
+                    해당 피부 투과 펩타이드는 단순한 전달체 역할을 넘어 항염·항전이 기능을 가진 생체 유래 물질이다. 흑색종 치료를 할 때 부작용 없이 보조적인 항암 효과를 보였다.
+                    연구팀은 ConA를 피부 투과 펩타이드를 이용해 경피 투과하는 방법으로 부작용을 최소화하고 치료 효능을 극대화했다. 기존 ConA의 정맥주사 방식이 가지고 있는 간독성의 어려움을 해소한 것으로 실험 결과 나타났다.
+                    또한, 기존에 같은 목적으로 사용되던 FDA 승인 약물인 이미퀴모드(Imiquimod)와 비교했을 때 이번에 개발한 ConA를 활용한 경피 투과 치료제는 월등히 우수한 항암 효능을 보이고, 이미퀴모드에서 흔히 발생하는 건선과 같은 부작용이 확인되지 않은 것으로 나타났다.
+                    연구팀은 경피 투과 방식의 특성상 약물 투여 경로 측면에서 혈액 투여 항암제와의 병용 요법과 시너지를 내고, 약물 내성과 비용 절감 측면에서도 효과적일 것으로 
+                    이번 연구 결과가 향후 다양한 분야의 경피물질 전달 연구에 중요한 기초 자료로도 활용될 것으로 전망하고 있다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="research">
+                <div class="photo"><img src="img/main/research_3.png" alt="인하대학교"></div>
+                <div class="text">
+                  <h2>고에너지 핫정공 생성, 수명시간 제어 방법 세계 최초 제시</h2>
+                  <h3>이문상 교수, 고효율 광에너지 전환소자 상용화 앞당기는 성과 달성</h3>
+                  <p>
+                    이문상 신소재공학과 교수 연구팀이 최근 고효율 광에너지 전환소자의 상용화를 앞당기는 성과를 거뒀다.
+                    이문상 교수 연구팀은 KAIST 박정영 화학과 교수 연구팀의 공동 연구로 이번 성과를 얻었다.
+                    공동연구팀은 빛이 금속 표면에 닿는 순간 만들어지는 고에너지의 핫정공(hot hole)의 수명시간을 제어할 수 있는 방법을 세계 최초로 제시했다.
+                    빛이 금속 나노 구조제에 흡수될 때 만들어지는 플라즈모닉 핫정공 (plasmonic hot-hole)은 광에너지를 전기·화학에너지와 같은 고부가가치 에너지원으로 변환하는 중요한 매개체로 주목받고 있다.
+                    하지만 핫정공은 피코초(1조분의 1초) 수준의 극초단 시간 안에 열적으로 없어지는 한계를 가지고 있어 실용적으로 응용되기 어려웠다.
+                    공동연구팀은 이를 극복하기 위해 국소 표면 플라즈몬 공명현상을 나타내는 금속 나노 그물망을 p형 반도체 질화갈륨 (p-GaN) 기판 위에 배치한 나노 다이오드 구조를 제조했다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec_04">
+      <div class="inner">
+        <h1>SNS</h1>
+        <ul class="sns_gallery">
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-1.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-1.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-1.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-1.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-2.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-2.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-2.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-2.png" alt="인하대학교"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="img/main/sns-2.png" alt="인하대학교"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sec_05">
+      <div class="inner">
+        <h1>Overview<p></p><div>숫자로 보는 인하대학교</div></h1>
+        <ul class="count">
+          <li>
+            <div class="overview">
+              <p class="category"><i class="xi-school"></i></p>
+              <p class="category_n">창학연도</p>
+              <p class="number" data-start="0" data-end="1954">1,954</p>
+              <p class="box"></p>
+            </div>
+          </li>
+          <li>
+            <div class="overview">
+              <p class="category"><i class="xi-group"></i></p>
+              <p class="category_n">재학생<span> (명)</span></p>
+              <p class="number" data-start="0" data-end="17200">17,200</p>
+              <p class="box"></p>
+            </div>
+          </li>
+          <li>
+            <div class="overview">
+              <p class="category"><i class="xi-business"></i></p>
+              <p class="category_n">전임교수<span> (명)</span></p>
+              <p class="number" data-start="0" data-end="120">120</p>
+              <p class="box"></p>
+            </div>
+          </li>
+          <li>
+            <div class="overview">
+              <p class="category"><i class="xi-map-o"></i></p>
+              <p class="category_n">취업률<span> (%)</span></p>
+              <p class="number" data-start="0" data-end="70">70</p>
+              <p class="box"></p>
+            </div>
+          </li>
+          <li>
+            <div class="overview">
+              <p class="category"><i class="xi-flight-takeoff"></i></p>
+              <p class="category_n">해외대학 교류현황</p>
+              <p class="number" data-start="0" data-end="35000">35,000</p>
+              <p class="box"></p>
+            </div>
+          </li>
+          <li>
+            <div class="overview">
+              <p class="category"><i class="xi-trophy"></i></p>
+              <p class="category_n">1인당 장학금<span> (만 원)</span></p>
+              <p class="number" data-start="0" data-end="341">341</p>
+              <p class="box"></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sec_06">
+      <h1>캠퍼스 첫걸음</h1>
+      <div class="inner">
+        <div class="school_btn">
+          <p><i class="xi-building"></i> 캠퍼스 투어 신청</p>
+          <p><i class="xi-book"></i> 새내기 가이드</p>
+          <p><i class="xi-home"></i> 기숙사 & 생활 정보</p>
+          <p><i class="xi-users"></i> 학생회 & 동아리 가입 안내</p>
+        </div>
+        <div class="school_youtube">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/sxGhEF7skgk?si=rmhqlt72Ag2DTnpG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer1">
+      <ul class="inner">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">개인정보 목적외 이용ㆍ제공ㆍ파기대장</a></li>
+        <li><a href="#">이메일주소 무단수집 거부</a></li>
+        <li><a href="#">영상정보처리기기 관리방침</a></li>
+        <li><a href="#">대학통계연보</a></li>
+        <li><a href="#">예산결산공고</a></li>
+        <li><a href="#">대학정보공시</a></li>
+        <li><a href="#">대학자체평가</a></li>
+      </ul>
+    </div>
+    <div class="footer2">
+      <div class="inner">
+        <div class="logo"><img src="img/logo_w.png" alt="인하대학교"></div>
+        <div class="info">
+          <p>22212 인천광역시 미추홀구 인하로 100</p>
+          <p>대표전화 : 032-860-7114, 팩스 : 032-863-1333, 긴급전화(24시간) : 032-860-9119</p>
+        </div>
+        <div class="sns">
+          <a href="#"><i class="xi-facebook-official"></i></a>
+          <a href="#"><i class="xi-naver-square"></i></a>
+          <a href="#"><i class="xi-instagram"></i></a>
+          <a href="#"><i class="xi-youtube-play"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">Copyright 2019. INHA UNIVERSITY All Rights Reserved.</div>
+  </footer>
+
+</div>
+
+<!-- mobile menu -->
+<div class="m_menu">
+  <div class="top">
+    <div class="logo"><img src="img/logo_b.png" alt="인하대학교"></div>
+    <div class="icon">
+      <p class="lang">KOR</p>
+      <p class="close"><i class="xi-close"></i></p>
+    </div>
+  </div>
+  <div class="menulist">
+    <ul class="menu_left">
+      <li class="m_select">
+        <div><i class="xi-profile-o"></i></div>
+        <p>Quick<br>Menu</p>
+      </li>
+      <li>
+        <div><i class="xi-school"></i></div>
+        <p>인하소개</p>
+      </li>
+      <li>
+        <div><i class="xi-library-books-o"></i></div>
+        <p>입학안내</p>
+      </li>
+      <li>
+        <div><i class="xi-building"></i></div>
+        <p>대학/대학원</p>
+      </li>
+      <li>
+        <div><i class="xi-briefcase"></i></div>
+        <p>산학/연구</p>
+      </li>
+      <li>
+        <div><i class="xi-group"></i></div>
+        <p>대학생활</p>
+      </li>
+      <li>
+        <div><i class="xi-bell-o"></i></div>
+        <p>인하소식</p>
+      </li>
+      <div class="link">
+        <p><a href="">I-Class</a></p>
+        <p><a href="">인하포털</a></p>
+        <p><a href="">인하광장</a></p>
+        <p><a href="">오픈런</a></p>
+      </div>
+    </ul>
+    <ul class="menu_right m_sub_01 m_click">
+      <li>
+        <p>재학생<i class="xi-minus"></i></p>
+        <ol class="menu_mr m_click">
+          <li><a href="sub/5-1-1.html">학사일정</a></li>
+          <li><a href="sub/5-1-2.html">수업/성적</a></li>
+          <li><a href="sub/5-1-3.html">장학</a></li>
+          <li><a href="sub/5-1-4.html">학적행정</a></li>
+          <li><a href="sub/5-1-5.html">증명서발급</a></li>
+          <li><a href="sub/1-4-3.html">규정집</a></li>
+          <li><a href="sub/5-2-2.html">편의서비스</a></li>
+          <li><a href="sub/1-4-2.html">대학기구</a></li>
+          <li><a href="">인하광장<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/5-4-5.html">시설물 사용 지원</a></li>
+          <li><a href="sub/5-4-2.html">기숙생활관</a></li>
+          <li><a href="sub/5-4-3.html">대학건강센터</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>예비 신입생<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="">대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">국제교류학생<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/5-1-1.html">학사일정</a></li>
+          <li><a href="sub/6-1-1.html">공지사항</a></li>
+          <li><a href="sub/6-2-1.html">인하뉴스</a></li>
+          <li><a href="sub/1-6-1.html">찾아오시는 길</a></li>
+          <li><a href="sub/5-2-2.html">편의서비스</a></li>
+          <li><a href="sub/1-6-6.html">교내전화번호부</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>졸업생<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/5-5-2.html">총동창회</a></li>
+          <li><a href="sub/5-1-4.html">학적행정</a></li>
+          <li><a href="sub/5-1-5.html">증명서발급</a></li>
+          <li><a href="sub/5-1-1.html">학사일정</a></li>
+          <li><a href="sub/1-4-2.html">대학기구</a></li>
+          <li><a href="sub/1-6-6.html">교내전화번호부</a></li>
+          <li><a href="">인하광장<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+      <li>
+        <p>방문객<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/1-6-1.html">찾아오시는 길</a></li>
+          <li><a href="">캠퍼스맵<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/1-6-6.html">교내전화번호부</a></li>
+          <li><a href="sub/6-1-1.html">공지사항</a></li>
+          <li><a href="sub/6-1-2.html">입찰공고</a></li>
+          <li><a href="sub/6-1-3.html">행사/세미나</a></li>
+          <li><a href="sub/6-2-1.html">인하뉴스</a></li>
+          <li><a href="sub/6-2-4.html">특허소식</a></li>
+          <li><a href="">대학신문<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+      <li>
+        <p>교직원<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/5-1-1.html">학사일정</a></li>
+          <li><a href="sub/1-6-6.html">교내전화번호부</a></li>
+          <li><a href="sub/1-4-3.html">규정집</a></li>
+          <li><a href="sub/5-2-2.html">편의서비스</a></li>
+          <li><a href="sub/4-2-1.html">연구기관</a></li>
+          <li><a href="sub/1-4-2.html">대학기구</a></li>
+          <li><a href="">인하광장<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/5-1-5.html">증명서발급</a></li>
+        </ol>
+      </li>
+    </ul>
+    <ul class="menu_right m_sub_02">
+      <li>
+        <p>이념/역사<i class="xi-minus"></i></p>
+        <ol class="menu_mr m_click">
+          <li><a href="">개교 70주년 기념<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/1-1-2.html">건학 이념</a></li>
+          <li><a href="sub/1-1-3.html">연혁</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>총장실<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/1-2-1.html">인사말</a></li>
+          <li><a href="sub/1-2-2.html">약력</a></li>
+          <li><a href="sub/1-2-3.html">주요활동</a></li>
+          <li><a href="sub/1-2-4.html">역대총장</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>학교법인<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/1-3-1.html">임원현황</a></li>
+          <li><a href="sub/1-3-2.html">이사회</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>대학현황<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/1-4-1.html">현황</a></li>
+          <li><a href="sub/1-4-2.html">대학기구</a></li>
+          <li><a href="sub/1-4-3.html">규정집</a></li>
+          <li><a href="sub/1-4-4.html">예결산공고</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>상징<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/1-5-1.html">로고</a></li>
+          <li><a href="sub/1-5-2.html">상징물</a></li>
+          <li><a href="sub/1-5-3.html">노래</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>캠퍼스 안내<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/1-6-1.html">찾아오시는 길</a></li>
+          <li><a href="sub/1-6-2.html">셔틀/통학버스</a></li>
+          <li><a href="sub/1-6-3.html">편의서비스</a></li>
+          <li><a href="">캠퍼스맵<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/1-6-5.html">캠퍼스 투어</a></li>
+          <li><a href="sub/1-6-6.html">교내전화번호부</a></li>
+        </ol>
+      </li>
+    </ul>
+    <ul class="menu_right m_sub_03">
+      <li>
+        <p>대학<i class="xi-minus"></i></p>
+        <ol class="menu_mr m_click">
+          <li><a href="">입학처<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">국제처(외국인 입학)<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+      <li>
+        <p>대학원<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/2-2-1.html">대학원 입학안내</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>기타교육과정<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/2-3-1.html">기타교육과정 안내</a></li>
+        </ol>
+      </li>
+    </ul>
+    <ul class="menu_right m_sub_04">
+      <li>
+        <p>대학<i class="xi-minus"></i></p>
+        <ol class="menu_mr m_click">
+          <li><a href="">프런티어창의대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">공과대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">자연과학대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">경영대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">사범대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">사회과학대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">문과대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">의과대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">간호대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">미래융합대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">예술체육대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">국제학부<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">소프트웨어융합대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">바이오시스템융합학부<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+      <li>
+        <p>대학원<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="">일반대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">공학대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">경영대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">교육대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">정책대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">상담심리대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">보건대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">법학전문대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">물류전문대학원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">제조혁신전문대학원<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+      <li>
+        <p>기타교육과정<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="">국제교류학생<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">해외 대학<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">평생교육원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">언어교육원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">과학영재교육센터<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">문화예술교육원<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="">INHA SUMMER SCHOOL<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+    </ul>
+    <ul class="menu_right m_sub_05">
+      <li>
+        <p>산학협력단<i class="xi-minus"></i></p>
+        <ol class="menu_mr m_click">
+          <li><a href="">산학협력단<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+      <li>
+        <p>연구기관<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/4-2-1.html">BK21 교육연구단(팀)</a></li>
+          <li><a href="sub/4-2-2.html">국가지정연구기관</a></li>
+          <li><a href="sub/4-2-3.html">대학부설연구기관</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>연구지원<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/4-3-1.html">연구지원</a></li>
+          <li><a href="">연구자 정보(PURE)<span><i class="xi-external-link"></i></span></a></li>
+        </ol>
+      </li>
+      <li>
+        <p>창업지원단<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="">창업지원단<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/4-4-2.html">교원 창업자</a></li>
+          <li><a href="sub/4-4-3.html">학생 창업자</a></li>
+        </ol>
+      </li>
+    </ul>
+    <ul class="menu_right m_sub_06">
+      <li>
+        <p>학사안내<i class="xi-minus"></i></p>
+        <ol class="menu_mr m_click">
+          <li><a href="sub/5-1-1.html">학사일정</a></li>
+          <li><a href="sub/5-1-2.html">수업/성적</a></li>
+          <li><a href="sub/5-1-3.html">장학</a></li>
+          <li><a href="sub/5-1-4.html">학적행정</a></li>
+          <li><a href="sub/5-1-5.html">증명서발급</a></li>
+          <li><a href="sub/5-1-6.html">ROTC(학군사관)</a></li>
+          <li><a href="sub/5-1-7.html">다중전공/마이크로전공/교직</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>학생지원<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="">인하광장<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/5-2-2.html">편의서비스</a></li>
+          <li><a href="sub/5-2-3.html">참(眞)인재 프로그램</a></li>
+          <li><a href="sub/5-2-4.html">새내기 가이드</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>학생활동<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/5-3-1.html">학생자치기구</a></li>
+          <li><a href="sub/5-3-2.html">방송국&신문사</a></li>
+          <li><a href="sub/5-3-3.html">동아리</a></li>
+          <li><a href="sub/5-3-4.html">축제</a></li>
+          <li><a href="sub/5-3-5.html">멘토링</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>캠퍼스 시설<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/5-4-1.html">시설안내</a></li>
+          <li><a href="sub/5-4-2.html">기숙생활관</a></li>
+          <li><a href="sub/5-4-3.html">대학건강센터</a></li>
+          <li><a href="sub/5-4-4.html">상담센터/장애학생지원실</a></li>
+          <li><a href="sub/5-4-5.html">시설물 사용 지원</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>졸업/취업지원<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="">학생진로설계포털시스템<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/5-5-2.html">총동창회</a></li>
+        </ol>
+      </li>
+    </ul>
+    <ul class="menu_right m_sub_07">
+      <li>
+        <p>인하알림<i class="xi-minus"></i></p>
+        <ol class="menu_mr m_click">
+          <li><a href="sub/6-1-1.html">공지사항</a></li>
+          <li><a href="sub/6-1-2.html">입찰공고</a></li>
+          <li><a href="sub/6-1-3.html">행사/세미나</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>인하뉴스<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="sub/6-2-1.html">인하뉴스</a></li>
+          <li><a href="sub/6-2-2.html">인하인 인터뷰</a></li>
+          <li><a href="sub/6-2-3.html">산학협력단 소식</a></li>
+          <li><a href="sub/6-2-4.html">특허소식</a></li>
+        </ol>
+      </li>
+      <li>
+        <p>인하홍보관<i class="xi-plus"></i></p>
+        <ol class="menu_mr">
+          <li><a href="">대학신문<span><i class="xi-external-link"></i></span></a></li>
+          <li><a href="sub/6-3-2.html">대학웹진</a></li>
+          <li><a href="sub/6-3-3.html">대학미디어</a></li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- side bar -->
+<div class="side-bar-fixed">
+  <div class="user_btn">
+    <p><i class="xi-profile-o"></i></p>
+    <p>USER<br>MENU</p>
+  </div>
+  <ul class="user_menu">
+    <li><a href="#" data-tab="0">재학생</a></li>
+    <li><a href="#" data-tab="1">예비 신입생</a></li>
+    <li><a href="#" data-tab="2">졸업생</a></li>
+    <li><a href="#" data-tab="3">방문객</a></li>
+    <li><a href="#" data-tab="4">교직원</a></li>
+  </ul>
+  <div class="chat_bot">
+    <p><i class="xi-message-o"></i></p>
+    <p>CHAT<br>BOT</p>
+  </div>
+  <div class="top_btn">
+    <a href="#">
+      <p><i class="xi-angle-up"></i></p>
+      <p>TOP</p>
+    </a>
+  </div>
+</div>
+
+<!-- pc quick menu -->
+<div class="quick_modal" id="quick_modal">
+  <div class="quick_pop">
+
+    <div class="close_btn"><i class="xi-close"></i></div>
+    <div class="text">
+      <h2>INHA <span>USER SERVICE</span></h2>
+      <p>사용자별 바로가기 서비스를 제공합니다.</p>
+    </div>
+
+    <div class="tab_buttons">
+      <div class="tab_button active">재학생</div>
+      <div class="tab_button">예비 신입생</div>
+      <div class="tab_button">졸업생</div>
+      <div class="tab_button">방문객</div>
+      <div class="tab_button">교직원</div>
+    </div>
+
+    <div class="tab_content active">
+      <div class="menu_grid">
+        <div class="menu_item"><a href="sub/5-1-1.html">학사일정</a></div>
+        <div class="menu_item"><a href="sub/5-1-2.html">수업/성적</a></div>
+        <div class="menu_item"><a href="sub/5-1-3.html">장학</a></div>
+        <div class="menu_item"><a href="sub/5-1-4.html">학적행정</a></div>
+        <div class="menu_item"><a href="sub/5-1-5.html">증명서발급</a></div>
+        <div class="menu_item"><a href="sub/1-4-3.html">규정집</a></div>
+        <div class="menu_item"><a href="sub/5-2-2.html">편의서비스</a></div>
+        <div class="menu_item"><a href="sub/1-4-2.html">대학기구</a></div>
+        <div class="menu_item"><a href="">인하광장<span><i class="xi-external-link"></i></span></a></div>
+        <div class="menu_item"><a href="sub/5-4-5.html">시설물 사용 지원</a></div>
+        <div class="menu_item"><a href="sub/5-4-2.html">기숙생활관</a></div>
+        <div class="menu_item"><a href="sub/5-4-3.html">대학건강센터</a></div>
+      </div>
+    </div>
+
+    <div class="tab_content">
+      <div class="menu_grid">
+        <div class="menu_item"><a href="">대학<span><i class="xi-external-link"></i></span></a></div>
+        <div class="menu_item"><a href="">대학원<span><i class="xi-external-link"></i></span></a></div>
+        <div class="menu_item"><a href="">국제교류학생<span><i class="xi-external-link"></i></span></a></div>
+        <div class="menu_item"><a href="sub/5-1-1.html">학사일정</a></div>
+        <div class="menu_item"><a href="sub/6-1-1.html">공지사항</a></div>
+        <div class="menu_item"><a href="sub/6-2-1.html">인하뉴스</a></div>
+        <div class="menu_item"><a href="sub/1-6-1.html">찾아오시는 길</a></div>
+        <div class="menu_item"><a href="sub/5-2-2.html">편의서비스</a></div>
+        <div class="menu_item"><a href="sub/1-6-6.html">교내전화번호부</a></div>
+      </div>
+    </div>
+    
+    <div class="tab_content">
+      <div class="menu_grid">
+        <div class="menu_item"><a href="sub/5-5-2.html">총동창회</a></div>
+        <div class="menu_item"><a href="sub/5-1-4.html">학적행정</a></div>
+        <div class="menu_item"><a href="sub/5-1-5.html">증명서발급</a></div>
+        <div class="menu_item"><a href="sub/5-1-1.html">학사일정</a></div>
+        <div class="menu_item"><a href="sub/1-4-2.html">대학기구</a></div>
+        <div class="menu_item"><a href="sub/1-6-6.html">교내전화번호부</a></div>
+        <div class="menu_item"><a href="">인하광장<span><i class="xi-external-link"></i></span></a></div>
+      </div>
+    </div>
+    
+    <div class="tab_content">
+      <div class="menu_grid">
+        <div class="menu_item"><a href="sub/1-6-1.html">찾아오시는 길</a></div>
+        <div class="menu_item"><a href="">캠퍼스맵<span><i class="xi-external-link"></i></span></a></div>
+        <div class="menu_item"><a href="sub/1-6-6.html">교내전화번호부</a></div>
+        <div class="menu_item"><a href="sub/6-1-1.html">공지사항</a></div>
+        <div class="menu_item"><a href="sub/6-1-2.html">입찰공고</a></div>
+        <div class="menu_item"><a href="sub/6-1-3.html">행사/세미나</a></div>
+        <div class="menu_item"><a href="sub/6-2-1.html">인하뉴스</a></div>
+        <div class="menu_item"><a href="sub/6-2-4.html">특허소식</a></div>
+        <div class="menu_item"><a href="">대학신문<span><i class="xi-external-link"></i></span></a></div>
+      </div>
+    </div>
+    
+    <div class="tab_content">
+      <div class="menu_grid">
+        <div class="menu_item"><a href="sub/5-1-1.html">학사일정</a></div>
+        <div class="menu_item"><a href="sub/1-6-6.html">교내전화번호부</a></div>
+        <div class="menu_item"><a href="sub/1-4-3.html">규정집</a></div>
+        <div class="menu_item"><a href="sub/5-2-2.html">편의서비스</a></div>
+        <div class="menu_item"><a href="sub/4-2-1.html">연구기관</a></div>
+        <div class="menu_item"><a href="sub/1-4-2.html">대학기구</a></div>
+        <div class="menu_item"><a href="">인하광장<span><i class="xi-external-link"></i></span></a></div>
+        <div class="menu_item"><a href="sub/5-1-5.html">증명서발급</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
